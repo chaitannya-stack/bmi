@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <a href="bmi"></a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1>Check your BMI</h1>
+    <h4>Enter your weight and height below to check your BMI results</h4>
+    <h4>Put your weight in here (KG)</h4>
+    <input type="number" id="input1">    
+    <h4>And your height in here (CM)</h3>
+    <input type="number" id="input2">
+    <button onclick="calculate()">"Calculate BMI"</button>
+<h3>Your BMI is </h3>
+<input type="number" id="input3">
+
+
+</body>
+
+<script>
+    function calculate() {
+        var i1 =parseint(document.getElementById("input1").value)
+        var i2 = parseint(document.getElementById("input2").value)
+        var divide = (i1)/(i2 * i2);
+        alert(divide)
+    }
+</script>
+</html>
